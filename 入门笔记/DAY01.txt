@@ -24,3 +24,21 @@
   %o ......（之后例子中体会，不是很重要）
 
   c语言有没有字符串类型？
+
+
+
+1.让控制台不会一闪而过：test_11_3处右键--属性--链接器--子系统--控制条--应用--确定
+
+2.#define _CRT_SECURE_NO_WARNINGS 1
+没有它会有这个错误：warning C4996: 'scanf': This function or variable may be unsafe. 
+Consider using scanf_s instead. 
+To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+
+scanf是c语言提供的，scanf_s不是标准C语言提供的是，VS编译器提供的（代码不具有跨平台性）
+
+有#define _CRT_SECURE_NO_WARNINGS 1就是让警告失效
+
+一定是加在源文件的第一行。找到vs安装路径--VC--vcprojectitem--new c++file.cpp
+--加上#define _CRT_SECURE_NO_WARNINGS 1（加不上就先拉到桌面）
+ 
