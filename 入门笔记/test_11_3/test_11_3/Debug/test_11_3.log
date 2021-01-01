@@ -1,7 +1,7 @@
-﻿生成启动时间为 2020/12/31 21:05:13。
+﻿生成启动时间为 2021/1/1 20:38:55。
      1>项目“D:\学习\c语言\入门笔记\test_11_3\test_11_3\test_11_3.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\test_11_3.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\test_11_3.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt test2.c
          test2.c
@@ -19,4 +19,4 @@
 
 生成成功。
 
-已用时间 00:00:01.01
+已用时间 00:00:01.05
