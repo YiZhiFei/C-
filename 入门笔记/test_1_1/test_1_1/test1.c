@@ -87,7 +87,138 @@
 //	return 0;
 //
 //}
- 
+
+//int main()
+//{
+//	auto int a = 10;//局部变量-自动变量，应该都有auto的，但已省略
+//	return 0;
+//}
+
+//int main()
+//{
+//	register int a = 10;//建议把 a 放入寄存器
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	signed int a = 10;//signed-有符号（一般省略） unsigned-无符号 
+//	//struct-结构体关键字
+//	//union -联合体/共用体
+//	return 0;
+//	//定义的变量名不能和关键字冲突
+//}
+
+//int main(){
+//	typedef unsigned int u_int;
+//	unsigned int num = 20;//=u_int num2 = 20;
+// return 0;
+//}
+
+//static 修饰局部变量
+//局部变量的生命周期变长
+
+
+//static 修饰全局变量
+//改变了变量的作用域
+//让静态变量只能在自己的源文件中使用，出了源文件，则无法使用
+
+//static 修饰局部变量
+//void test()
+//{
+//	static int a = 1;//a是静态的局部变量
+//	a++;
+//	printf("a = %d\n",a);//2，3，4，5，6
+//}
+//int main()
+//{
+//	int i = 0;
+//	while(i<5){
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+
+
+//static 修饰全局变量
+
+//int main()
+//{
+//	//extern-用来声明外部符号的。
+//	extern int g_val;//用static修饰，则无法使用
+//	printf("g_val = %d\n",g_val);
+//	return 0;
+//}
+
+//static修饰函数
+//改变了函数的链接属性，普通函数具有外部链接属性，使用static就变成了内部链接属性
+
+//extern int Add(int t,int t)//引用外部函数，需要声明
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = Add(a,b);//使用用static修饰的函数，无法使用
+//	printf("%d\n",sum);
+//}
+
+
+
+//#define定义的标识符常量
+//#define MAX 100
+//int main()
+//{
+//	int a = MAX;//100
+//	printf("%d\n",a);
+//	return  0;
+//}
+
+//#define 可以定义宏
+//int Max(int x,int y)//函数
+//{
+//	if(x<y)
+//		return y;
+//	else
+//		return x;
+//}
+//#define MAX(X,Y)(X>Y?X:Y)
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	//函数
+//	int max = Max(a,b);
+//	printf("max = %d\n",max);
+//	//宏的方式
+//	max = MAX(a,b);
+//   printf("max = %d\n",max);
+//   return 0;
+//}
+
+//int main()
+//{
+//	int a = 10;//4个字节
+//	int* p = &a;//取地址  int*是指针类型
+//	//有一种变量是用来存放地址的，叫指针变量
+//	//printf("%p\n",&a);//=printf("%p\n",p);
+//	*p = 20;//*-解引用操作符  找到p中的a并改成20
+//	printf("a=%d\n",a); 
+//	return 0;
+//
+//}
+
+//int main()
+//{
+//	char ch = 'w';
+//	char* pc = &ch;
+//	*pc = 'a';
+//	printf("%c\n",ch);
+//	printf("%d\n",sizeof(pc));//32位cpu中指针是4个字节，64位是8
+//	return 0;
+//}
+
 
 
 
