@@ -91,26 +91,30 @@
 //（只允许输入三次密码，如果密码正确则提示登录成功，如果三次均输入错误，则退出程序）
 int main()
 {
-	int x;
-	int one,two,five;
+	int i = 0;
+	char password[20] = {0};
 	
-	scanf("%d",&x);
-	for(one = 1;one<x*10;one++)
+	for(i=0;i<3;i++)
 	{
-		for(five=1;five<x*10/2;two++)
+		printf("请输入密码:>");
+		scanf("%s",&password);
+		//if(password == "123456") //== 不能用来比较两个字符串是否相等，应该使用一个库函数 -strcmp
+		if(strcmp(password,"123456") == 0)
 		{
-			for(five=1;five<x*10/5;five++)
-			{
-				if(one+two*2+five*5==x*10)
-				{
-					goto out;
-				}
-			}
+			printf("登录成功！\n");
+			break;
 		}
-	}out:
+		else
+	    {
+		printf("密码不正确！");
+	    }
+	}
+	if(3 == i)
+	{
+		printf("三次密码不正确，退出程序。");
+	}
 	return 0;
 }
-
 
 
 

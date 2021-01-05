@@ -61,7 +61,7 @@ int main()
 ////MALE,FEMALE,SECRET - Ã¶¾Ù³£Á¿
 //int main()
 //{
-//	/*enum Sex s = FEMALE;*/
+//	enum Sex s = FEMALE;
 //	printf("%d\n",MALE);
 //	printf("%d\n",FEMALE);
 //	printf("%d\n",SECRET);
