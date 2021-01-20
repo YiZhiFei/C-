@@ -1,4 +1,11 @@
+#pragma warning(disable:4996)
 #include <stdio.h>
+
+//void明确告诉我们main函数不需要参数
+//int main(void)
+//{
+//
+//}
 
 //int main()
 //{
@@ -7,7 +14,7 @@
 	printf("第一个c语言代码\n");
 	printf("准备了好久\n");
 	printf("加油码农！\n");
-	return 0;
+	return 0;//表示正确返回
 	*/
 	
 	//char ch = 'A';//内存
@@ -30,10 +37,10 @@
 	//float weight=95.6f;//向内存申请4个字节，存放小数（默认是double）
 
     /*
-    int a = 100;//全局变量/成员变量
+    int a = 100;//全局变量/成员变量-整个工程中能用
 	int main()
 	{
-		int a = 10;//局部变量
+		int a = 10;//局部变量-只能在所在代码块中运用
 		printf("%d\n",a);
 		//局部变量和全局变量的名字建议不要相同-容易误会，产生bug
 		//当局部变量和全局变量的名字相同的时候，局部变量优先
@@ -67,4 +74,11 @@ int main(){
 4.库函数-C语言本身提供给我们使用的函数，所以使用别人的东西时，
   要打招呼——#include
 5.stdio-std:stdandard input output
+
+变量的作用域：哪里可以使用，哪里就是它的作用域
+变量的周期：变量创建到销毁的时间段
+{}-代码块
+
+一个工程有多个.c文件
+多个.c文件只能有1个main函数
 */

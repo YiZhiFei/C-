@@ -4,6 +4,7 @@
 
 //int main()
 //{
+// printf("%d\n",strlen("c:\test\328\test.c"));//8进制里没有8 微笑
 //	printf("%d\n",strlen("c:\test\32\test.c"));
 //	//\32 -- 32是2个8进制数字
 //	//32作为8进制代表的那个十进制数字，作为ASCII码值
