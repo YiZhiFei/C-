@@ -13,7 +13,7 @@
 	printf("Hello World!\n");
 	printf("第一个c语言代码\n");
 	printf("准备了好久\n");
-	printf("加油码农！\n");
+	printf("加油！\n");
 	return 0;//表示正确返回
 	*/
 	
