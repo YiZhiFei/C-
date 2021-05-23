@@ -43,6 +43,12 @@ int main()
 //	printf("%d\n",MAX);
 //	return 0;
 //}
+//int main()
+//{
+//	int arr[10] = {0};
+//	printf("%d\n", arr);
+//	return 0;
+//}
 
 //4.枚举常量
 //枚举一一列举
@@ -57,14 +63,15 @@ int main()
 //	FEMALE,
 //	SECRET
 //};
-//
-////MALE,FEMALE,SECRET - 枚举常量
+////
+//////MALE,FEMALE,SECRET - 枚举常量
 //int main()
 //{
 //	enum Sex s = FEMALE;
 //	printf("%d\n",MALE);
 //	printf("%d\n",FEMALE);
 //	printf("%d\n",SECRET);
+//	printf("%d\n", s);
 //	return 0;
 //}
 //练一练
@@ -94,7 +101,7 @@ int main()
 //int main()
 //{
 //	char arr1[] ="abc";//数组  "abc"--'a','b','c'，'\0'字符串的结束标志
-//	char arr2[] ={'a','b','c'，0};//出现乱码
+//	char arr2[] ={'a','b','c'，'\0'};//出现乱码   0和\0是一样的
 //	printf("%s\n",arr1);
 //	printf("%s\n",arr2);
 //	return 0;

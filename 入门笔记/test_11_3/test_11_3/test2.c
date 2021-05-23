@@ -152,7 +152,7 @@
 //}
 
 //用函数求出两个数中最大的数
-	int Max(int a,int b)
+	/*int Max(int a,int b)
 	{
 		int c = 0;
 		if(a > b)
@@ -169,7 +169,7 @@
 	max = Max(num1,num2);
 	printf("max = %d\n",max);
 	return 0;
-}
+}*/
 //int Add(int x,int y)
 //{
 //	int z = x+y;
