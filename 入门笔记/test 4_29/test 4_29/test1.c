@@ -208,6 +208,6 @@ int main()
 	ar2 = l * h;
 	ar3 = w * h;
 	printf("三面面积分别是：%d %d %d\n", ar1, ar2, ar3);
-	return 0;
+	return 0;   //p44
 }
 
